@@ -1,0 +1,10 @@
+<tr>
+  <th scope="row"><%= person.id %></th>
+  <td><%= person.document.tipo_documento %></td>
+  <td><%= link_to person.identificacion, person_path(person.id), class: "text-danger" %></td>
+  <td><%= person.primer_nombre %></td>
+  <td><%= person.segundo_nombre %></td>
+  <td><%= person.primer_apellido %></td>
+  <td><%= person.segundo_apellido %></td>
+  <td><%= person.role.nombre_rol %></td>
+</tr>

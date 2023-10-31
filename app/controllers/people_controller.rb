@@ -6,6 +6,8 @@ class PeopleController < ApplicationController
 
   def new
     @person = Person.new
+    @person.build_document
+    @person.build_role
   end
 
   def show
